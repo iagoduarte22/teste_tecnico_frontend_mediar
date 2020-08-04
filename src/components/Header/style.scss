@@ -1,0 +1,14 @@
+.header {
+  background-color: #EDEDED;
+  border-bottom: 1px solid #cacaca;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+}
