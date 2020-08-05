@@ -4,4 +4,32 @@
   &__main {
     width: 100%;
   }
+.navbar{
+  padding: 15px 15px;
+  margin: 60px;
+  border-radius: 2px;
+  background-color: #162633;
+
+  &__buttons{
+    display: flex;
+    justify-content: flex-end;
+  
+    button{
+    background-color: #162633;
+    margin: 3px;
+    border-radius: 8px;
+    border: solid 2px white;
+    display: flex;
+    }
+
+  }
+}  
+  .graphics{
+
+    display: flex;
+    align-items: flex-end;
+    margin-left: 65px;
+    
+
+  }
 }
