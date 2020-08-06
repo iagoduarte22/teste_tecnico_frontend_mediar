@@ -4,32 +4,90 @@
   &__main {
     width: 100%;
   }
-.navbar{
-  padding: 15px 15px;
-  margin: 60px;
-  border-radius: 2px;
-  background-color: #162633;
 
-  &__buttons{
-    display: flex;
-    justify-content: flex-end;
-  
-    button{
+  .navbar {
+    margin: 20px 60px;
+    border-radius: 2px;
     background-color: #162633;
-    margin: 3px;
-    border-radius: 8px;
-    border: solid 2px white;
     display: flex;
+
+    &__data {
+      background-color: #ffffff;
+      padding: 10px 15px;
+      border: 1px solid #000;
+      border-radius: 3px;
+
+      &--inputs {
+        display: flex;
+        margin-bottom: 25px;
+
+        input {
+          margin: 0 5px;
+          max-width: 100px;
+        }
+
+        select {
+          width: 100%;
+        }
+      }
+
+      input[type='range'] {
+        width: 100%;
+      }
     }
 
-  }
-}  
-  .graphics{
+    &__filters {
+      display: flex;
+      padding: 10px;
 
-    display: flex;
-    align-items: flex-end;
-    margin-left: 65px;
+      &--item {
+        background-color: #ffffff;
+        padding: 10px 15px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        margin-right: 10px;
+        min-width: 130px;
+
+        h3 {
+          color: #000;
+          margin-bottom: 10px;
+          font-weight: bold;
+          font-size: 14px;
+        }
+
+      }
+    }
+
+    &__buttons{
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px;
+      margin-left: auto;
+      align-items: center;
     
+      button{
+        background-color: #162633;
+        margin: 3px;
+        border-radius: 8px;
+        border: solid 2px white;
+        display: flex;
+        padding: 5px;
+      }
 
+    }
+  }
+
+  .graphics{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 60px;
+    
+    &__card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+      margin: 10px;
+      padding: 20px;
+    }
   }
 }
